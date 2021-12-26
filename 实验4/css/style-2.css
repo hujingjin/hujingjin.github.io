@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0px;
+	margin: 0px;
+	line-height: 20px;
+	font-family: "宋体";
+}
+ body{
+	background: #F3F1E9;
+}
+#wrapper{
+	padding: 0 0 5px 0
+}
+#content-inside{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#main_block{
+	font: 12px #464646 ;
+	float: left;
+	overflow: hidden;
+}
+#item{
+	padding: 13px 0 5px 0;
+	float: left;
+}
+#item h4{
+	font-size: 24px ;
+}
+#big_view{
+	padding: 20px 0 12px 0;
+	background: white;
+	width: 478px;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #ccc;
+	position: relative;
+}
+#big_view span{
+	font-size:30px;
+	color: red;
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	left:25px;
+}
+.scroll{
+	width: 478px;
+	border: 1px solid #ccc;
+	background: white;
+	margin: 10px 0 0 0;
+	padding: 5px 0;
+	text-align: center;
+}
+.scroll a{
+	margin: 0 2px;
+}
+.description{
+	float: left;
+	width: 220px;
+	padding: 55px 0 0 25px;
+	
+}
+.description p{
+	padding-bottom: 15px;
+}
+.view{
+	display: block;
+	float: left;
+	text-decoration: none;
+	background-color: #799F1D;
+	color: white;
+	text-align: center;
+	width: 50px;
+	margin: 3px 5px 0 0;
+	line-height: 25px;
+	
+}
+.buy{
+	display: block;
+	float: left;
+	text-decoration: none;
+	background-color:#545454;
+	color:#9BEF52;
+	text-align: center;
+	width: 120px;
+	margin: 3px 5px 0 5px;
+	line-height: 25px;
+}

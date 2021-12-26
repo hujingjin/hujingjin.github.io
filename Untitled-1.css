@@ -1,0 +1,180 @@
+*{margin: 0;padding: 0;}
+body{ 
+    background:url("back.jpg");
+    font-size: 20px;
+    font-family: serif;
+    color: #888;
+}
+.header{
+    color: #414141;
+    text-align:center;
+	margin:0 auto 6px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: 8px;
+    font-size: 80px;
+    margin-top: 16%;
+}
+.abstract{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+	font:30px  bold;
+	color: #414141;
+}
+.line{
+    width: 100%;
+    border-right:2px solid #888;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.animation{
+    animation: grow 3.5s steps(30) 1s normal both,
+    blink 500ms steps(30)infinite normal;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes grow{
+    from{
+        width: 0;
+    }
+    to{
+        width: 264px;
+    }
+}
+@keyframes blink {
+    from {
+        border-right-color: #888;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+.button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.button a{
+    padding: 10px 120px; 
+    text-decoration: none;
+    line-height: 80px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    margin-top: 120px;
+    position: relative;
+    background:url("click.jpg");
+    background-size: 400%;
+    color: #fff;
+}
+a::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: -5px;
+    bottom: -5px;
+    background:url("click.jpg");
+    background-size: 400%;
+    border-radius: 20px;
+    filter: blur(15px);
+    z-index: -1;
+}
+a:hover::before{
+    animation: button 8s infinite;
+}
+a:hover{
+    animation: button 8s infinite;
+}
+@keyframes button{
+    100%{
+        background-position: 400% 0;
+    }
+}
+
+@media (max-width:960px){
+    @keyframes grow{
+        from{
+            width: 0;
+        }
+        to{
+            width: 215px;
+        }
+    }
+    .header{
+        font-size: 64px;
+    }
+    .abstract{
+        font-size: 16px;
+    }
+    .button{
+        font-size: 20px;
+    }
+    .button a{
+        padding: 8px 96px;
+        line-height: 64px;
+        border-radius: 16px;
+    }
+} 
+@media screen and (max-width:748px){
+    @keyframes grow{
+        from{
+            width: 0;
+        }
+        to{
+            width: 160px;
+        }
+    }
+    .header{
+        font-size: 56px;
+    }
+    .abstract{
+        font-size: 12px;
+    }
+    .button{
+        font-size: 15px;
+    }
+    .button a{
+        padding: 6px 72px;
+        line-height: 48px;
+        border-radius: 12px;
+    }
+}
+@media screen and (max-width:576px){
+    @keyframes grow{
+        from{
+            width: 0;
+        }
+        to{
+            width: 160px;
+        }
+    }
+    .header{
+        font-size: 42px;
+    }
+    .abstract{
+        font-size: 8px;
+    }
+    .button{
+        font-size: 10px;
+    }
+    .button a{
+        padding: 4px 48px;
+        line-height: 32px;
+        border-radius: 8px;
+    }
+}@charset "utf-8";
+/* CSS Document */
+
